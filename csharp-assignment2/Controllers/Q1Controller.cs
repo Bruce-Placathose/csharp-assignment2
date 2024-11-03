@@ -25,8 +25,8 @@ namespace csharp_assignment2.Controllers
         /// <example>
         /// POST : localhost:xx/api/J1/Delivedroid
         /// Headers: Content-Type: application/x-www-form-urlencoded
-        /// POST DATA: Collisions=100&Deliveries=5
-        /// -> -750
+        /// POST DATA: Collisions=4&Deliveries=2
+        /// -> 60
         /// </example>
 
 

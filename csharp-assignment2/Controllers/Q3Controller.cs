@@ -10,8 +10,22 @@ namespace csharp_assignment2.Controllers
     [Route("api/J2")]
     public class Q3Controller : ControllerBase
     {
+        // <summary>
+        // Output the total amount of scolville unit from a given list of chilli
+        // </summary>
+        // <return>
+        // An integer that represent the total amount of Scolville Heat Unit
+        // </return>
+        // <param name="Ingredients">A string with all the chillis seperated by comma</param>
+        // <example>
+        // GET at http://localhost:5136/api/J2/ChilliPeppers?Ingredients=Poblano,Cayenne,Thai,Poblano -> 118000
+        // </example>
+        // <example>
+        // GET at http://localhost:5136/api/J2/ChilliPeppers?Ingredients=Habanero,Habanero,Habanero,Habanero,Habanero -> 625000
+        // </example>
         
-        [HttpGet(template:"ChilliPeppers/{Ingredients}")]
+        
+        [HttpGet(template:"ChilliPeppers")]
         // [Consumes("application/x-www-form-urlencoded")]
         public int GetTotalScolville([FromQuery] string Ingredients)
         {
